@@ -1,4 +1,4 @@
-### About my webservice 
+### About my web service 
 
 My web service is a healthcare oriented service that displays data with tables of general patient information and their medical records information. This is a great starter tool for medical offices and it can be further developed to host more information and data. Currently, I leveraged Faker to generate fake random data to fill the tables, but this can altered to store real information. I find this web service to be important because it leverages many technologies to provide a great and easy experience:
 
