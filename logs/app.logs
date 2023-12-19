@@ -1,0 +1,23 @@
+# Logger config
+logging.basicConfig(filename='app.logs', level=logging.INFO)
+
+# logs 
+@app.route('/about')
+def aboutpage():
+    logging.info("Accessed! /about page")    
+    return render_template('about.html')
+
+@app.route('/data')
+def data(data=df, data2=df2):
+    logging.info("Accessed! /data page")
+    return render_template('data.html', data=data, data2=data2)
+
+@app.route('/')
+def index():
+    logging.info("Accessed! / page")
+    return render_template('base.html')
+
+@app.route('/')
+def hello_world():
+    logging.info("Accessed! /hi_there page")
+    return 'Hi there, amazing human! This is from a Flask app in a Docker container! Bye now'

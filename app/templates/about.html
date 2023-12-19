@@ -1,0 +1,26 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+    <section class="mb-6">
+        <h2 class="text-xl mb-2">About</h2>
+        <p>This is a cool healthcare database designed to store and manage patient data efficiently and securely.</p>
+    </section>
+
+    <section>
+        <h2 class="text-xl mb-2">Features</h2>
+        <ul class="list-disc pl-5">
+            <li>Secure patient data management</li>
+            <li>Shows general patient information</li>
+            <li>Recent patient visits</li>
+        </ul>
+    </section>
+
+
+
+{% endblock %}
+
+
+@app.route('/about')
+def aboutpage():
+    return render_template('about.html')
