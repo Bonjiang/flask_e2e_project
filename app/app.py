@@ -39,7 +39,7 @@ def execute_query_to_dataframe(query: str, engine):
     return read_sql(query, engine)
 
 # Logger config
-logging.basicConfig(filename='app.logs', level=logging.INFO)
+logging.basicConfig(filename='logs/app.log', level=logging.INFO)
 
 tables = get_tables(db_engine)
 logging.info("Tables in the database: %s:", tables)
